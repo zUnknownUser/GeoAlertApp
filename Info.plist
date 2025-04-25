@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Nome exibido no app -->
+    <key>CFBundleDisplayName</key>
+    <string>GeoAlertApp</string>
+
+    <!-- Nome técnico do bundle -->
+    <key>CFBundleIdentifier</key>
+    <string>devStations.GeoAlertApp</string>
+
+    <!-- Nome interno do app -->
+    <key>CFBundleName</key>
+    <string>GeoAlertApp</string>
+
+    <!-- Versão visível ao usuário -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <!-- Versão interna de build -->
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Permissões de localização -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Precisamos da sua localização para exibir sua posição no mapa.</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Usamos sua localização mesmo em segundo plano para alertas baseados em localização.</string>
+</dict>
+</plist>
