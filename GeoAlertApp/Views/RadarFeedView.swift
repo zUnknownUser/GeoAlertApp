@@ -4,7 +4,6 @@
 //
 //  Created by Lucas Amorim on 26/04/25.
 //
-
 import SwiftUI
 
 struct RadarFeedView: View {

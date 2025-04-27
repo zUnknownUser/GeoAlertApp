@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FF9602CCBA14C0F67BC76CE8 /* Pods_GeoAlertApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC7E2FAEAC536477D30230E /* Pods_GeoAlertApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7AC7E2FAEAC536477D30230E /* Pods_GeoAlertApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoAlertApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		827054ABAF2CC467202D59B1 /* Pods-GeoAlertApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoAlertApp.debug.xcconfig"; path = "Target Support Files/Pods-GeoAlertApp/Pods-GeoAlertApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A01F0CF10FED34B7686288F6 /* Pods-GeoAlertApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoAlertApp.release.xcconfig"; path = "Target Support Files/Pods-GeoAlertApp/Pods-GeoAlertApp.release.xcconfig"; sourceTree = "<group>"; };
 		F47B98BF2DBBCF89006BE361 /* GeoAlertApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoAlertApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F40C61562DBBEF65001629EB /* Exceptions for "GeoAlertApp" folder in "GeoAlertApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F47B98BE2DBBCF89006BE361 /* GeoAlertApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F47B98C12DBBCF89006BE361 /* GeoAlertApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F40C61562DBBEF65001629EB /* Exceptions for "GeoAlertApp" folder in "GeoAlertApp" target */,
+			);
 			path = GeoAlertApp;
 			sourceTree = "<group>";
 		};
@@ -23,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9602CCBA14C0F67BC76CE8 /* Pods_GeoAlertApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DCED09C2A507F674B13BB16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				827054ABAF2CC467202D59B1 /* Pods-GeoAlertApp.debug.xcconfig */,
+				A01F0CF10FED34B7686288F6 /* Pods-GeoAlertApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F47B98B62DBBCF89006BE361 = {
 			isa = PBXGroup;
 			children = (
 				F47B98C12DBBCF89006BE361 /* GeoAlertApp */,
 				F47B98C02DBBCF89006BE361 /* Products */,
+				4DCED09C2A507F674B13BB16 /* Pods */,
+				F851CC9BBCCEAB44A6A63FD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +77,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F851CC9BBCCEAB44A6A63FD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AC7E2FAEAC536477D30230E /* Pods_GeoAlertApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F47B98CD2DBBCF8B006BE361 /* Build configuration list for PBXNativeTarget "GeoAlertApp" */;
 			buildPhases = (
+				6E70F2B7A866CCFD40D6202C /* [CP] Check Pods Manifest.lock */,
 				F47B98BB2DBBCF89006BE361 /* Sources */,
 				F47B98BC2DBBCF89006BE361 /* Frameworks */,
 				F47B98BD2DBBCF89006BE361 /* Resources */,
+				83A0B53E33DB39E5A35B1E11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +106,6 @@
 				F47B98C12DBBCF89006BE361 /* GeoAlertApp */,
 			);
 			name = GeoAlertApp;
-			packageProductDependencies = (
-			);
 			productName = GeoAlertApp;
 			productReference = F47B98BF2DBBCF89006BE361 /* GeoAlertApp.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +134,8 @@
 			);
 			mainGroup = F47B98B62DBBCF89006BE361;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F47B98C02DBBCF89006BE361 /* Products */;
 			projectDirPath = "";
@@ -113,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E70F2B7A866CCFD40D6202C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoAlertApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83A0B53E33DB39E5A35B1E11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoAlertApp/Pods-GeoAlertApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoAlertApp/Pods-GeoAlertApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoAlertApp/Pods-GeoAlertApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F47B98BB2DBBCF89006BE361 /* Sources */ = {
@@ -246,6 +330,7 @@
 		};
 		F47B98CE2DBBCF8B006BE361 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827054ABAF2CC467202D59B1 /* Pods-GeoAlertApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -254,12 +339,17 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GeoAlertApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 5RS2AA677K;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeoAlertApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show nearby places on the map.\n";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Este app precisa da sua localização para funcionar corretamente";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -275,6 +365,7 @@
 		};
 		F47B98CF2DBBCF8B006BE361 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01F0CF10FED34B7686288F6 /* Pods-GeoAlertApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,12 +374,17 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GeoAlertApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 5RS2AA677K;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeoAlertApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show nearby places on the map.\n";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Este app precisa da sua localização para funcionar corretamente";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
