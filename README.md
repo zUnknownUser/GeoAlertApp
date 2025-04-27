@@ -49,15 +49,6 @@ Atualmente, o **GeoAlert App** está em fase de desenvolvimento e será disponib
 
 ---
 
-## Funcionalidades Futuras 📈
-
-- **Adicionar mais tipos de notificações**: Personalização dos tipos de alertas (ex.: alertas sonoros, vibracionais).
-- **Histórico de eventos**: Armazenar eventos anteriores e permitir que os usuários visualizem os locais visitados no passado.
-- **Mapa de eventos**: Visualização de eventos e locais de interesse em tempo real.
-- **Melhorias na interface**: Tornar a interface mais interativa com novas animações.
-
----
-
 ## Licença 📝
 
 Este projeto não é open source e não está disponível para contribuições externas. O código é de propriedade de **Lucas Amorim** e a distribuição será restrita aos testes da versão beta.
@@ -66,13 +57,6 @@ Este projeto não é open source e não está disponível para contribuições e
 
 ## Contato 📬
 
-**Lucas Amorim** - lucas.amorim@exemplo.com  
+**Lucas Amorim** - lucasamorim78c@gmail.com  
 Repositório do projeto: [https://github.com/seu-usuario/GeoAlertApp](https://github.com/seu-usuario/GeoAlertApp) *(se aplicável)*
-
----
-
-## Agradecimentos 🙏
-
-- **Firebase**: Para autenticação e banco de dados.
-- **Apple**: Para o excelente conjunto de ferramentas como **MapKit**, **SwiftUI**, e **CoreLocation**.
 
